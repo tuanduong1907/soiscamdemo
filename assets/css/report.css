@@ -55,6 +55,11 @@
   color: #cccccc;
   width: max-content;
 }
+
+.form__title span{
+  color: rgb(239 68 68);
+}
+
 .form__input {
   padding: 10px 12px;
   height: 40px;
