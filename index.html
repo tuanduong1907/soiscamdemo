@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ | Soi Scam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <!-- Effect Image -->
+    <div class="circle-effect-wrap">
+      <div class="circle-effect-1"></div>
+      <div class="circle-effect-2"></div>
+    </div>
+    <div class="fixed-image">
+      <img
+        srcset="./assets/images/shield-image.png 2x"
+        alt="soi scam"
+        class="fixed-image__shield"
+      />
+      <img
+        srcset="./assets/images/star-image.png 2x"
+        alt="soi scam"
+        class="fixed-image__star"
+      />
+    </div>
+    <!-- end Effect Image -->
+    <!-- Header -->
+
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img src="./assets/images/logo.svg" alt="" class="header__logo-img" />
+        <span class="header__logo-text">Soi scam</span>
+      </a>
+      <div class="header__menu-btn">
+        <img src="./assets/images/bars.svg" alt="" />
+      </div>
+      <div class="header__close-btn hidden">
+        <img src="./assets/images/close-icon.svg" alt="" />
+      </div>
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="index.html" class="header__nav-link active">Trang chủ</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./scammer.html" class="header__nav-link">Scamer</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./gioi-thieu.html" class="header__nav-link">Giới thiệu</a>
+        </li>
+        <a href="./report.html" class="btn header__btn">Gửi tố cáo</a>
+      </ul>
+    </header>
+    <!-- end Header -->
+    <!-- Content -->
+    <div class="container">
+      <section class="content">
+        <h1 class="content__heading">KIỂM TRA & TỐ CÁO SCAMMER</h1>
+        <p class="content__desc">
+          Website lưu trữ dữ liệu lừa đảo trên mxh mà không chịu bất kỳ hạn chế
+          seach của một thuật toán nào trên Facebook
+        </p>
+        <form class="form-search">
+          <input
+            type="text"
+            placeholder="Kiểm tra STK, số điện thoại..."
+            class="input-search"
+          />
+          <button type="submit" class="btn btn-search">Tìm kiếm</button>
+        </form>
+      </section>
+      <!-- end Content -->
+
+      <!-- Scammer List -->
+      <section class="scammer">
+        <div class="scammer__header">
+          <h2 class="scammer__title title-today">Hôm nay 21/09/2024</h2>
+          <p class="scammer__desc">có 0 cảnh báo hôm nay</p>
+        </div>
+        <div class="scammer__list-wrap">
+          <ul id="gallery" class="scammer__list"></ul>
+          <div class="loading-wrap">
+            <div class="fui-loading-roller">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <span>Đang tải</span>
+          </div>
+          <div class="not-found">
+            <img
+              class="not-found__img"
+              src="./assets/images/not-found.svg"
+              alt="not fount"
+            />
+            <span>Không có dữ liệu</span>
+          </div>
+        </div>
+      </section>
+      <!-- end Scammer List -->
+
+      <!-- Modal Scammer -->
+
+      <!-- end Modal Scammer -->
+
+      <div class="warning">
+        <h2 class="scammer__title warning-title">
+          Một số kiểu lừa đảo online thường gặp
+        </h2>
+        <ul class="warining__list"></ul>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

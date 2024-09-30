@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tố Cáo Lừa Đảo | Soi Scam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/report.css" />
+  </head>
+  <body>
+    <div class="circle-effect-wrap">
+      <div class="circle-effect-1"></div>
+      <div class="circle-effect-2"></div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img
+          srcset="./assets/images/logo.png 2x"
+          alt=""
+          class="header__logo-img"
+        />
+        <span class="header__logo-text">Soi scam</span>
+      </a>
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="/" class="header__nav-link">Trang chủ</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./scammer.html" class="header__nav-link">Scamer</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./gioi-thieu.html" class="header__nav-link">Giới thiệu</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./dieu-khoan.html" class="header__nav-link">Điều khoản</a>
+        </li>
+      </ul>
+      <a href="./report.html" class="btn header__btn">Gửi tố cáo</a>
+    </header>
+    <!-- end Header -->
+    <!-- Form Report -->
+    <div class="breadcrumb">
+      <a href="/" class="breadcrumb__link">Trang chủ</a>
+      <span class="breadcrumb__icon">
+        <img src="./assets/images/arrow-right-icon.svg" alt="" />
+      </span>
+      <a href="" class="breadcrumb__link active">Gửi tố cáo</a>
+    </div>
+    <form class="form-report" autocomplete="off">
+      <h2 class="form__heading">Thông tin kẻ lừa đảo</h2>
+      <div class="form__item-wrap">
+        <div class="form__item">
+          <label class="form__title" for="fullname"
+            >Chủ tài khoản <span>*</span></label
+          >
+          <input
+            id="fullname"
+            type="text"
+            placeholder="Họ và tên..."
+            class="form__input"
+            name="fullname"
+          />
+          <span class="form-message"></span>
+        </div>
+        <div class="form__item">
+          <label class="form__title" for="phoneNumber">Số điện thoại</label>
+          <input
+            id="phoneNumber"
+            type="text"
+            placeholder="Nhập số điện thoại..."
+            class="form__input"
+            name="phoneNumber"
+          />
+          <span class="form-message"></span>
+        </div>
+        <div class="form__item">
+          <label class="form__title" for="bankNumber">Số tài khoản</label>
+          <input
+            id="bankNumber"
+            type="text"
+            placeholder="Nhập số tài khoản ngân hàng..."
+            class="form__input"
+            name="bankNumber"
+          />
+          <span class="form-message"></span>
+        </div>
+        <div class="form__item">
+          <label class="form__title" for="bankName">Ngân hàng</label>
+          <input
+            id="bankName"
+            type="text"
+            placeholder="Nhập số tên ngân hàng..."
+            class="form__input"
+            name="bankName"
+          />
+          <span class="form-message"></span>
+        </div>
+      </div>
+      <div class="form__item">
+        <textarea
+          name="contentReport"
+          placeholder="Nội dung tố cáo"
+          id="contentReport"
+          class="form__textarea"
+        ></textarea>
+        <span class="form-message"></span>
+      </div>
+      <div class="from__upload-image-container">
+        <div class="form__upload-wrap">
+          <label for="uploadImage" class="form__upload">
+            <input
+              type="file"
+              name="uploadImage"
+              id="uploadImage"
+              multiple
+              hidden
+              accept="image/*"
+            />
+            <img
+              class="form__upload-icon"
+              src="./assets/images/upload.svg"
+              alt="soiscam"
+            />
+            <span class="form__upload-text">Chọn ảnh</span>
+          </label>
+        </div>
+        <span class="form-message" id="errorMessage" style="color: red"></span>
+      </div>
+      <h2 class="form__heading">Xác thực người tố cáo</h2>
+      <div class="form__item-wrap">
+        <div class="form__item">
+          <label class="form__title" for="fullnameSender"
+            >Họ và tên <span>*</span></label
+          >
+          <input
+            id="fullnameSender"
+            name="fullnameSender"
+            type="text"
+            placeholder="Họ và tên..."
+            class="form__input"
+          />
+          <span class="form-message"></span>
+        </div>
+        <div class="form__item">
+          <label class="form__title" for="phoneNumberSender"
+            >Liên hệ (Zalo - Sđt)</label
+          >
+          <input
+            id="phoneNumberSender"
+            name="phoneNumberSender"
+            type="text"
+            placeholder="Nhập số điện thoại..."
+            class="form__input"
+          />
+          <span class="form-message"></span>
+        </div>
+      </div>
+      <div class="form__action-wrap">
+        <div class="form__action-item">
+          <input
+            type="radio"
+            name="option"
+            id="radio-1"
+            value="Tôi là nạn nhân"
+            class="form__radio-input"
+            checked
+          />
+          <label for="radio-1" class="form__title">Tôi là nạn nhân</label>
+        </div>
+        <div class="form__action-item">
+          <input
+            type="radio"
+            name="option"
+            id="radio-2"
+            value="Tôi chỉ đăng hộ"
+            class="form__radio-input"
+          />
+          <label for="radio-2" class="form__title">Tôi chỉ đăng hộ</label>
+        </div>
+      </div>
+      <button class="btn form__btn" type="submit">Gửi tố cáo</button>
+    </form>
+    <!-- end Form Report -->
+
+    <!-- Script -->
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./assets/js/validation.js"></script>
+    <script src="./assets/js/report.js"></script>
+    <!-- end Script -->
+  </body>
+</html>

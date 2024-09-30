@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scammer | Soi Scam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css"
+  />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/scammer.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img
+          srcset="./assets/images/logo.svg"
+          alt=""
+          class="header__logo-img"
+        />
+        <span class="header__logo-text">Soi scam</span>
+      </a>
+      <div class="header__menu-btn">
+        <img src="./assets/images/bars.svg" alt="" />
+      </div>
+      <div class="header__close-btn hidden">
+        <img src="./assets/images/close-icon.svg" alt="" />
+      </div>
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="index.html" class="header__nav-link">Trang chủ</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./scammer.html" class="header__nav-link active">Scamer</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./gioi-thieu.html" class="header__nav-link">Giới thiệu</a>
+        </li>
+        <a href="./report.html" class="btn header__btn">Gửi tố cáo</a>
+      </ul>
+    </header>
+    <!-- end Header -->
+
+      <!-- Scammer List -->
+       <div class="container">
+        <form class="form-search">
+          <input
+            type="text"
+            placeholder="Kiểm tra STK, số điện thoại..."
+            class="input-search"
+          />
+          <button type="submit" class="btn">Tìm kiếm</button>
+        </form>
+         <section class="scammer scammer-custom">
+           <div class="scammer__header">
+             <h2 class="scammer__title">Danh Sách Scammer</h2>
+             <p class="scammer__desc">có 0 cảnh báo</p>
+            </div>
+            <div class="scammer__list-wrap">
+              <ul id="gallery" class="scammer__list"></ul>
+              <div class="not-found">
+                <img
+                  class="not-found__img"
+                  src="./assets/images/not-found.svg"
+                  alt="not fount"
+                />
+                <span>Không có dữ liệu</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    <!-- end Scammer List -->
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/scammer.js"></script>
+  </body>
+</html>

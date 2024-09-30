@@ -1,0 +1,46 @@
+.intro-heading {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: justify;
+}
+
+.intro-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.intro-item p {
+  line-height: 2;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: var(--subTextColor);
+}
+
+/* Mobie */
+@media only screen and (max-width: 739px) {
+  .intro-item p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .intro-item h3 {
+    font-size: 18px;
+  }
+  .intro-heading{
+    font-size: 26px;
+  }
+}
+
+/* Destop */
+@media only screen and (min-width: 1024px) {
+  .intro {
+    margin-top: 40px;
+    padding-inline: 24px;
+  }
+}
