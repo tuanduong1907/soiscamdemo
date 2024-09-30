@@ -196,8 +196,29 @@
 
 /* END REPORT FORM */
 
+
+/* // Mobile */
+@media only screen and (max-width: 739px){
+  .form__item-wrap {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .form-report{
+    max-width: 100%;
+  }
+  .form__heading{
+    font-size: 26px;
+  }
+  .form__action-wrap{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 /* Mobile & Tablet */
 @media only screen and (max-width: 1023px) {
+  .form__input{
+  }
   .breadcrumb {
     margin-top: calc(80px + 16px);
     margin-inline: 16px;
@@ -207,10 +228,7 @@
     padding: 16px;
     padding-bottom: 80px;
   }
-  .form__item-wrap {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
+
   .img-preview__wrap {
     width: calc(50% - 12px);
   }
