@@ -5,7 +5,7 @@ const scammerDesc = document.querySelector(".scammer__desc");
 const scammerTitle = document.querySelector(".scammer__title");
 const titleToday = document.querySelector(".title-today");
 const notFound = document.querySelector(".not-found");
-let scammerApporveData = []
+let scammerApporveData = [];
 let scammerData = [];
 
 function formatDate(dateString) {
@@ -77,7 +77,9 @@ function handleShowModal(item) {
             </div>
             <div class="modal-info__item">
                 <div class="modal-info__label">Số tài khoản</div>
-                <div class="modal-info__text text-single">${item.bankNumber}</div>
+                <div class="modal-info__text text-single">${
+                  item.bankNumber
+                }</div>
             </div>
             <div class="modal-info__item">
                 <div class="modal-info__label">Ngân hàng</div>
@@ -184,7 +186,7 @@ async function fetchScammerData() {
   try {
     const response = await axios.get(api);
     scammerData = response.data;
-    scammerApporveData = scammerData.filter(item => item.approve === true)
+    scammerApporveData = scammerData.filter((item) => item.approve === true);
     getScammer(scammerApporveData);
   } catch (error) {
     console.error(error);
@@ -206,15 +208,13 @@ formSearch.addEventListener("submit", (e) => {
     (item) =>
       item.bankNumber.includes(searchValue) ||
       item.phoneNumberSender.includes(searchValue)
-  );
+  ).filter((item) => item.approve === true);;
 
   // Hiển thị dữ liệu đã lọc
   getScammer(filteredData);
   if (searchValue === "") {
-    getScammer(scammerData);
+    fetchScammerData();
   }
 });
 
 // Handle Open warning
-
-
