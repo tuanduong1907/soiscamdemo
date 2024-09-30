@@ -104,8 +104,10 @@ Validator({
         date: new Date(),
         images: arrayImage,
       });
-      console.log(response);
-      location.reload();
+      await FuiToast.success('Đơn gửi thành công, chờ duyệt!')
+      setTimeout(() => {
+        location.reload();
+      }, 1500);
     } catch (error) {
       console.error(error);
     }

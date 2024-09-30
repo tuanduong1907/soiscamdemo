@@ -325,6 +325,14 @@ body::-webkit-scrollbar-thumb {
   top: 56px;
   left: 12px;
 }
+
+/* toast style */
+.fui-toast-body {
+  color: #121627;
+}
+/* toast style */
+
+
 @keyframes nzsBq {
   0% {
     transform: rotate(0deg);
