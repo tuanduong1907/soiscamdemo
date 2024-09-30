@@ -254,7 +254,7 @@ async function getWarning() {
             </div>
             <div class="warning__content">${item.content}</div>
           </li>`;
-      wariningList.insertAdjacentHTML("beforeend", warningItemHTML);
+      wariningList.insertAdjacentHTML("afterbegin", warningItemHTML);
     });
     const warningHeader = wariningList.querySelectorAll(".warning__header");
     warningHeader.forEach((item) => {
