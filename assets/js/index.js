@@ -189,7 +189,7 @@ async function getScammer(data) {
       loading.classList.remove("active");
     });
   } else {
-    scammerDesc.textContent = `Có ${todayData.length} cảnh báo hôm nay`;
+    scammerDesc.textContent = `Có ${todayData.length} cảnh báo`;
     loading.classList.remove("active");
     notFound.classList.add("active");
   }
