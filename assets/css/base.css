@@ -220,6 +220,8 @@ body::-webkit-scrollbar-thumb {
   backdrop-filter: blur(20px);
 }
 
+
+
 .not-found {
   justify-content: center;
   align-items: center;
@@ -326,12 +328,9 @@ body::-webkit-scrollbar-thumb {
   left: 12px;
 }
 
-/* toast style */
 .fui-toast-body {
   color: #121627;
 }
-/* toast style */
-
 
 @keyframes nzsBq {
   0% {
@@ -424,7 +423,8 @@ body::-webkit-scrollbar-thumb {
     z-index: 10;
     animation: slideDown ease 0.5s;
     margin-top: 0;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
@@ -438,7 +438,10 @@ body::-webkit-scrollbar-thumb {
       opacity: 1;
     }
   }
-  body.active{
+  body.active {
     padding-top: 80px;
+  }
+  .lg-thumb.lg-group{
+    margin: auto;
   }
 }
